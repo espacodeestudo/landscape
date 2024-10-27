@@ -17,3 +17,97 @@ body{
     font-family: 'SpaceGrotesk', sans-serif;
     
 }
+
+
+.container-header header{
+
+    display: flex;
+    justify-content: space-between;
+    padding:  2rem;
+    //box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+}
+
+.container-header header .Logo > h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0D99FF;
+    text-transform: uppercase;
+}
+
+.container-header header > .container-search{
+    width: 40%;
+    max-width: auto;
+}
+
+.container-header header .container-search > .search {
+
+    width: 100%;
+    display:flex;
+    align-items: center;
+    overflow: hidden;
+    background: #f4f2f29a;
+    border-radius: 0.4rem;
+    gap:1rem;
+
+}
+
+.container-header header .container-search  .search > input{
+    width: 90%;
+    padding: 0.8rem;
+    background: none;
+}
+
+.container-header header .container-search  .search > input::placeholder{
+    color: #736F6F ;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.container-header header .container-search  .search > button{
+    
+    background: none;
+    cursor: pointer;
+    color: #0D99FF;
+    
+}
+
+.container-header header  > .container-notif{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-header header > .container-notif > .notif{
+     
+    background: #f4f2f29a;
+    padding: 0.4rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.container-header header > .container-notif > .notif:hover{
+    
+    background: #e2e1e1;
+    color: #0D99FF;
+}
+
+
+
+
+
+
+
+@media (max-width: 840px){
+
+    .container-header header > .container-search{
+        display: none;
+    }
+    
+}
